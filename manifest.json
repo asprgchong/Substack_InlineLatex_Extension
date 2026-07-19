@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Substack Latex extension",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": ["https://*.substack.com/publish/post/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+        "resources": ["injected.js"],
+        "matches": ["https://*.substack.com/*"]
+        }
+    ]
+}
